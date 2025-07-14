@@ -1,0 +1,368 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/*header*/
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  border:none;
+}
+
+ /*div2 - верхняя строка: логотип и кнопка /*/
+.top-bar {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* кнопку вправо */
+  align-items: center;
+  height: 75px;
+}
+
+.store-name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 72px;
+  font-weight: bold;
+}
+.store-subtitle {
+  font-size: 25px;
+  margin: 0;
+  margin-top: 4px;
+  text-align: center;
+  color: black;
+}
+
+/*/ Кнопка справа */
+.header-button button {
+  padding: 10px 20px;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 40px;
+  margin-top:20px;
+}
+
+
+
+/*navbar*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline; 
+    margin-right: 20px; 
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+
+/*Обувь*/
+.offers-title {
+   text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  letter-spacing: 1px;
+}
+.offers-title::after {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(to right, #ff6a00, #ffcc00);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.best-offers {
+  /*background-color: #d1d1c9;*/
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+
+
+/*Бренды*/
+.brands{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: nowrap;
+}
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(to right, #000, #555);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+
+
+/*О Компании*/
+.about-section-new {
+  padding: 60px 20px;
+  background-color: #f3f3f3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-container-new {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-heading {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about-highlights {
+  list-style: none;
+  padding: 0;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.about-highlights li::before {
+  content: "";
+  margin-right: 0;
+}
+
+.about-right {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.about-right img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*review*/
+.reviews-section {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .reviews-title {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .review-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .review-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .review-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .review-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .review-name {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #111;
+    }
+
+    .review-text {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+
+/*footer*/
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-links,
+.footer-contacts {
+  margin-top: 20px;
+}
+
+.footer-links h4,
+.footer-contacts h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffcc00;
+}
+
+.footer-contacts p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+
+/*map*/
+.map-section {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.map-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/*media*/
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  .offers-title {
+    font-size: 22px;
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

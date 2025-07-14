@@ -1,0 +1,165 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+/*main container*/
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+/*form*/
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/*input*/
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2b2b2b;
+  color: white;
+  font-size: 14px;
+}
+
+.input-field::placeholder {
+  color: #888;
+}
+
+/*register button*/
+.main-button {
+  background-color: #4ea8ff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.main-button:hover {
+  background-color: #3794dd;
+}
+
+/*already have account button*/
+.link-button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #4ea8ff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link-button:hover {
+  color: #82c7ff;
+}
+/*footer*/
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-links,
+.footer-contacts {
+  margin-top: 20px;
+}
+
+.footer-links h4,
+.footer-contacts h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffcc00;
+}
+
+.footer-contacts p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+
+
+/*media*/
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  .offers-title {
+    font-size: 22px;
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

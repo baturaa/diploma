@@ -1,0 +1,271 @@
+body {
+   font-family: 'Poppins', sans-serif;
+   font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+/*LOGO*/
+.logo{
+  display: flex;
+  margin-left: 1350px;
+  margin-top: 30px;
+}
+.logo h2{
+  font-size: 40px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: black;
+  margin-left:-320px; 
+  margin-top: 20px;
+  text-align: center;
+  text-shadow: 5px 5px #b9b9b9;
+  text-decoration: none;
+}
+
+.logo h2::after{
+  content:"";
+  display: block;
+  height: 4px;
+  width: 130px;
+  background: linear-gradient(to right, #ff6a00, #ffcc00);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+.main-image{
+  margin-left: -120px;
+  margin-top:0%;
+  display: flex;
+  
+}
+/*SIZE*/
+.size-label {
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.size-selector ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 0;
+  justify-content: flex-start;
+}
+
+.size-selector ul li {
+  list-style: none;
+}
+
+.size-selector ul li span {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.size-selector ul li span:hover {
+  background-color: black;
+  color: white;
+}
+
+/*CART*/
+.add-to-cart {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.open-cart-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.cart-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.cart-content {
+  background-color: #fff;
+  margin-top: 1%;
+  margin-left: 20%;
+  padding: 20px;
+  border-radius: 5px;
+  width: 900px;
+  height: 600px;
+  max-height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-cart {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: red;
+}
+.remove-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+  background-color: darkred;
+}
+
+.qty-btn {
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qty-btn:hover {
+  background-color: #e6b800;
+}
+
+#cartItemsList li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+/*PRODUCT NAME, PRICE*//*CART*/
+.Title-Price {
+  max-width: 350px;
+  margin-left: 1000px;
+  margin-top: -700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+/*FOOTER*/
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 40px 0;
+  margin-top: 329px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-links,
+.footer-contacts {
+  margin-top: 20px;
+}
+
+.footer-links h4,
+.footer-contacts h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffcc00;
+}
+
+.footer-contacts p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/*MEDIA*/
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  .offers-title {
+    font-size: 22px;
+  }
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
