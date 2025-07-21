@@ -6,23 +6,25 @@ body {
   font-size: 16px;
 }
 
-.logo {
+
+.logo{
   display: flex;
   margin-left: 70px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
-
-.logo h2 {
+.logo h2{
   font-size: 40px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-style: italic;
   color: black;
-  margin-left: 30px;
-  margin-top: 10px;
+  margin-left:30px; 
+  text-align: center;
   text-shadow: 5px 5px #b9b9b9;
+  text-decoration: none;
 }
 
-.logo h2::after {
-  content: "";
+.logo h2::after{
+  content:"";
   display: block;
   height: 4px;
   width: 130px;
@@ -30,17 +32,32 @@ body {
   margin: 10px auto 0;
   border-radius: 2px;
 }
-
+.Return-Button button {
+  padding: 10px 20px;
+  font-size: 35px;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1560px;
+  margin-top: -180px;
+  position: relative;
+  display: flex;
+}
 nav ul {
   margin: 0;
   padding: 20px 0;
   text-align: center;
   background-color: black;
+  margin-top: 120px;
 }
 
 nav ul li {
   display: inline;
   margin-right: 20px;
+  font-size: 20px;
 }
 
 nav a {

@@ -5,7 +5,7 @@ Batura Store
 
 Структура проекта
 
-- `landing page.html` — главная страница
+- `index.html` — главная страница (landing page)
 - `landing page.css` — стили
 - `images/` — изображения товаров и логотипов
 - Остальные HTML-файлы — страницы с деталями товаров
