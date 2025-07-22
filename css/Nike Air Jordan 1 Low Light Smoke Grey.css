@@ -356,3 +356,10 @@ body {
     font-size: 14px;
   }
 }
+
+.close-cart {
+  top: 40px; right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: red;
+}

@@ -316,3 +316,10 @@ body {
     text-align: center;
   }
 }
+
+.close-cart {
+  top: 40px; right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: red;
+}
