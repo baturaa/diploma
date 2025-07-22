@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
 }
-
+/*logo*/
 .logo{
   display: flex;
   margin-left: 70px;
@@ -41,6 +41,7 @@ header h1 {
   margin-top: -90px;
 }
 
+/*return button to landing page*/
 .Return-Button button {
   padding: 10px 20px;
   font-size: 35px;
@@ -55,6 +56,7 @@ header h1 {
   position: relative;
   display: flex;
 }
+/*nav bar*/
 nav ul {
     margin: 0;
     padding: 0;
@@ -81,6 +83,7 @@ nav a:hover {
     color: #ff6600;
 }
 
+/*product card*/
 .products-grid {
     display: flex;
     flex-wrap: wrap;
@@ -143,6 +146,7 @@ nav a:hover {
     font-size: 18px;
 }
 
+/*card button*/
 .add-to-cart {
     border: none;
     height: 40px;
@@ -155,7 +159,7 @@ nav a:hover {
     justify-content: center;
     cursor: pointer;
 }
-
+/*footer*/
 .footer {
   background-color: black;
   color: #fff;
@@ -217,4 +221,101 @@ nav a:hover {
 .footer-contacts p {
   font-size: 14px;
   margin-bottom: 6px;
+}
+
+
+/*media*/
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  .logo h2 {
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  .Return-Button {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Return-Button button {
+    font-size: 24px;
+    padding: 8px 16px;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .products-grid {
+    margin: 20px auto;
+    padding: 10px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .image img {
+    height: 250px;
+  }
+
+  .info h3 {
+    font-size: 18px;
+  }
+
+  .info-price {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .add-to-cart {
+    width: 100%;
+    font-size: 16px;
+    height: 35px;
+    border-radius: 5px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contacts {
+    margin-top: 20px;
+  }
+
 }

@@ -6,7 +6,7 @@ body {
   font-size: 16px;
 }
 
-
+/*logo*/
 .logo{
   display: flex;
   margin-left: 70px;
@@ -32,6 +32,8 @@ body {
   margin: 10px auto 0;
   border-radius: 2px;
 }
+
+/*return button to landing page*/
 .Return-Button button {
   padding: 10px 20px;
   font-size: 35px;
@@ -47,6 +49,8 @@ body {
   position: relative;
   display: flex;
 }
+
+/*nav bar*/
 nav ul {
   margin: 0;
   padding: 20px 0;
@@ -71,6 +75,8 @@ nav a:hover {
   color: #ff6600;
 }
 
+
+/*product card*/
 .products-grid {
   display: flex;
   flex-wrap: wrap;
@@ -141,6 +147,8 @@ nav a:hover {
   font-size: 18px;
 }
 
+
+/*card button*/
 .add-to-cart {
   border: none;
   height: 40px;
