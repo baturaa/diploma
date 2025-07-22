@@ -352,17 +352,117 @@ nav a:hover {
 
 /*media*/
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 32px;
-  }
-  header p {
+  body {
     font-size: 16px;
   }
+
+  /* Шапка */
+  .top-bar {
+    justify-content: center;
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .store-name {
+    position: static;
+    transform: none;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .store-subtitle {
+    font-size: 18px;
+  }
+
+  .header-button {
+    margin: 10px 0;
+  }
+
+  .header-button button {
+    font-size: 24px;
+    padding: 8px 16px;
+    margin: 0 auto;
+  }
+
+  /* Навигация */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
+
+  /* Предложения */
+  .best-offers {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
   .offers-title {
     font-size: 22px;
   }
-  nav ul li {
-    display: block;
-    margin-bottom: 10px;
+
+  .best-offers img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Бренды */
+  .brands {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .brands div img {
+    width: 70%;
+    height: auto;
+  }
+
+  /* О компании */
+  .about-container-new {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-left, .about-right {
+    width: 100%;
+  }
+
+  .about-right img {
+    width: 70%;
+  }
+
+  /* Отзывы */
+  .review-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Карта */
+  .map-container iframe {
+    height: 300px;
+  }
+
+  /* Футер */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links, .footer-contacts {
+    margin-top: 20px;
   }
 }
