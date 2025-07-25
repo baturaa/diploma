@@ -1,16 +1,36 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
+* {
+  box-sizing: border-box;
 }
 
-/*main container*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  font-size: 18px;
+}
+
+/* Обёртка всей страницы */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Центрирование содержимого */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Контейнер логина */
 .login-container {
   width: 100%;
   max-width: 400px;
-  margin: 40px auto;
   padding: 30px;
   background-color: #1f1f1f;
   border-radius: 12px;
@@ -35,7 +55,6 @@ body {
   margin-bottom: 20px;
 }
 
-/*input*/
 .input-field {
   width: 100%;
   padding: 10px;
@@ -88,11 +107,6 @@ body {
   background-color: #f0f0f0;
 }
 
-.google-button svg {
-  width: 20px;
-  height: 20px;
-}
-
 .google-button a {
   text-decoration: none;
   color: #444;
@@ -115,7 +129,7 @@ body {
   background-color: #3a94df;
 }
 
-/*footer*/
+/* Футер */
 .footer {
   background-color: black;
   color: #fff;
@@ -136,11 +150,6 @@ body {
   font-size: 24px;
   margin-bottom: 10px;
   color: #ffcc00;
-}
-
-.footer-brand p {
-  font-size: 14px;
-  color: #aaa;
 }
 
 .footer-links,
@@ -179,24 +188,49 @@ body {
   margin-bottom: 6px;
 }
 
-
-
-/*media*/
+/* Адаптивность */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 32px;
+  .main-content {
+    padding: 20px;
+    align-items: flex-start;
   }
-  header p {
-    font-size: 16px;
+   .login-container {
+    margin-top: 30px;
+    max-width: 50%
+    padding: 20px;
   }
-  .offers-title {
-    font-size: 22px;
+
+  .login-title {
+    font-size: 20px;
   }
-  nav ul li {
-    display: block;
-    margin-bottom: 10px;
+
+  .login-subtitle {
+    font-size: 13px;
+  }
+
+  .input-field {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .login-button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .google-button {
+    font-size: 14px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-contacts {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
-
-
-

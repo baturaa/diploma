@@ -9,59 +9,57 @@
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<!-- main container -->
-  <div class="register-container">
-    <h2 class="form-title">Зарегистрироваться</h2>
-    <p class="form-subtitle">Войдите в аккаунт чтобы сохранять свои пароли</p>
+  <div class="page-wrapper">
+    <!-- Контент страницы -->
+    <div class="main-content">
+      <div class="register-container">
+        <h2 class="form-title">Зарегистрироваться</h2>
+        <p class="form-subtitle">Войдите в аккаунт чтобы сохранять свои пароли</p>
 <!-- email -->
-    <div class="form-group">
-      <label for="email_field">Email:</label>
-      <input placeholder="qwerty@gmail.com" name="email" type="text" class="input-field" id="email_field">
-    </div>
+        <div class="form-group">
+          <label for="email_field">Email:</label>
+          <input placeholder="qwerty@gmail.com" name="email" type="text" class="input-field" id="email_field">
+        </div>
 <!-- login -->
-    <div class="form-group">
-      <label for="login">Введите ваш логин:</label>
-      <input placeholder="User" name="username" type="text" class="input-field" id="login">
-    </div>
+        <div class="form-group">
+          <label for="login">Введите ваш логин:</label>
+          <input placeholder="User" name="username" type="text" class="input-field" id="login">
+        </div>
 <!-- password -->
-    <div class="form-group">
-      <label for="password_field">Введите ваш пароль:</label>
-      <input placeholder="Password" name="password" type="password" class="input-field" id="password_field">
+        <div class="form-group">
+          <label for="password_field">Введите ваш пароль:</label>
+          <input placeholder="Password" name="password" type="password" class="input-field" id="password_field">
+        </div>
+<!-- register btn -->
+        <button class="main-button" type="submit" id="submit">Зарегистрироваться</button>
+        <a href="login.html" class="link-button">Уже есть аккаунт?</a>
+      </div>
     </div>
 
-<!-- button -->
-    <button class="main-button" type="submit" id="submit">Зарегистрироваться</button>
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>Batura Store</h2>
+        </div>
 
-    <a href="login.html" class="link-button">Уже есть аккаунт?</a>
+        <div class="footer-links">
+          <h4>Меню</h4>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#about-section">О Компании</a></li>
+            <li><a href="sneakers.html">Кроссовки</a></li>
+            <li><a href="clothing.html">Одежда</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contacts">
+          <h4>Контакты</h4>
+          <p>Тел: +7 (777) 777 717 09 06</p>
+          <p>Адрес: Алматы, микрорайон Коктем-3, 16А</p>
+        </div>
+      </div>
+    </footer>
   </div>
-
-
-<!-- footer -->
-  <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-brand">
-      <h2>Batura Store</h2>
-
-    </div>
-
-    <div class="footer-links">
-      <h4>Меню</h4>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="index.html#about-section">О Компании</a></li>
-        <li><a href="sneakers.html">Кроссовки</a></li>
-        <li><a href="clothing.html">Одежда</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-contacts">
-      <h4>Контакты</h4>
-      <p>Тел: +7 (777) 777 717 09 06</p>
-      <p>Адрес: Алматы, микрорайон Коктем-3, 16А</p>
-    </div>
-  </div>
-</footer>
-
 </body>
 </html>
