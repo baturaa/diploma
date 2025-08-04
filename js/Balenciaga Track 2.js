@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: selectedSize,
       price: 300000,
       quantity: 1,
-      image: "images/balenciaga Track 2.png"
+      image: "images\balenciaga track 2.png"
     };
 
     const existing = cart.find(
