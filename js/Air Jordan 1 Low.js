@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
       size: selectedSize,
       price: 130000,
       quantity: 1,
-      image: "images/Air jordan 1 Low.png"
+      image: "images/Air Jordan 1 Low3.png"
     };
 
     const existing = cart.find(
